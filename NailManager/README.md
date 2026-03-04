@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# Sistema de Gestão para Salão de Manicure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém um projeto de estudo desenvolvido em conjunto com um aluno, com o objetivo de praticar e aprender conceitos de desenvolvimento de software através da criação de uma aplicação real.
 
-Currently, two official plugins are available:
+A proposta do projeto é desenvolver um sistema web para auxiliar no gerenciamento de um salão de manicure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objetivo do Sistema
 
-## React Compiler
+O aplicativo tem como objetivo ajudar na organização do dia a dia do salão, substituindo o controle feito em papel por um sistema digital.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Entre as funcionalidades planejadas estão:
 
-## Expanding the ESLint configuration
+* Agendamento de clientes
+* Cadastro de clientes
+* Cadastro de serviços
+* Visualização da agenda
+* Controle financeiro simples
+* Controle básico de estoque
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Sobre o Projeto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Este projeto está sendo construído do zero como parte de um processo de aprendizado prático. Durante o desenvolvimento, serão trabalhados conceitos importantes de desenvolvimento de sistemas, organização de código e evolução de funcionalidades.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+O foco principal é aprender na prática enquanto se constrói uma solução útil para um problema real.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Observação
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Este repositório tem caráter educacional e está em constante evolução conforme o projeto avança.
