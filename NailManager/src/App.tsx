@@ -1,5 +1,4 @@
-import './App.css'
-import { LoginCard } from './components/ui/login_card'
+import { LoginCard } from './pages/Login'
 
 function App() {
   return (

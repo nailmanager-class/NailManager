@@ -14,7 +14,7 @@ export function LoginCard() {
   return (
     <Card className="w-full max-w-md min-h-100 flex">
       <CardHeader>
-        <CardTitle className="text-2xl font-bold text-card-foreground">
+        <CardTitle className="text-2xl font-bold text-card-foreground text-center">
           Entre na sua conta
         </CardTitle>
         <CardDescription className="text-muted-foreground mt-2">
@@ -43,12 +43,6 @@ export function LoginCard() {
                 <Label htmlFor="password" className="text-green-800">
                   Password
                 </Label>
-                <a
-                  href="#"
-                  className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                >
-                  Esqueceu a senha?
-                </a>
               </div>
               <Input
                 className="w-full h-10 pr-4 py-3 bg-input border border-border rounded-lg focus:outline-none focus:ring-2 
@@ -63,20 +57,31 @@ export function LoginCard() {
         </form>
       </CardContent>
       <CardFooter className="flex-col gap-2">
-          <Button
-            type="submit"
-            className="w-full bg-green-700! text-white!"
-            variant="default"
+        <Button
+          type="submit"
+          className="w-full bg-green-700 text-white hover:bg-green-800 cursor-pointer"
+        >
+          Entrar
+        </Button>
+        <p className="text-sm text-muted-foreground">
+          Não tem uma conta?{" "}
+          <a href="#" className="underline-offset-4 hover:underline">
+            Cadastre-se
+          </a>
+
+        </p>
+
+        <p className="text-sm text-muted-foreground">
+          Esquceu sua senha? {" "}
+          <a
+            href="#"
+            className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
           >
-            Entrar
-          </Button>
-          <p className="text-sm text-muted-foreground">
-            Não tem uma conta?{" "}
-            <a href="#" className="underline-offset-4 hover:underline">
-              Cadastre-se
-            </a>
-          </p>
+            Clique aqui!
+          </a>
+        </p>
+
       </CardFooter>
-    </Card>
+    </Card >
   );
 }
