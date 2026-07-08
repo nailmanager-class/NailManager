@@ -1,5 +1,4 @@
-type registerFields = {
+export type LoginFields = {
     email: string;
     password: string;
-    confirmPassword: string;
 }
